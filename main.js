@@ -1,6 +1,6 @@
 var dataContainer =  document.getElementById("house-info");
 
-
+//jump to venore for functional call
 
 
 
@@ -87,7 +87,40 @@ function abDendriel(){
   dataContainer.innerHTML = "Ab sucks";
 }
 function ankrahmun(){
-  console.log("ank sucks");
+  fetch('https://api.tibiadata.com/v2/houses/Nefera/Ankrahmun.json')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+
+      // Examine the text in the response
+      response.json().then(function(data) {
+        console.log('Ankrahmun homes Loaded Succesfully');
+        
+        console.log(data.houses.houses.length);
+        allHomes = [];
+          for (var i=0; i < data.houses.houses.length; i++){
+          console.log("Houses Loaded: " + i);
+          allHomes.push(data.houses.houses[i]);
+          var houseName = allHomes[i].name;
+          var houseRent = allHomes[i].rent;
+          var houseStatus = allHomes[i].status;
+          var badge = document.createElement('div');
+            badge.className = 'badge';
+            badge.innerHTML =
+              '<h2 class="names">' + houseName + '</h2>' +
+              '<h3 class="rents">' + houseRent + '</h3>' +
+              '<p class="status">' + houseStatus + '</p>' ;
+            dataContainer.appendChild(badge);
+          console.log(`House ${i} - ${houseName} loaded succesfully`);
+        }
+      });
+    }
+  )
+  .catch(function(err) { console.log('Fetch Error :-S', err);});
 }
 function carlin(){
 }
@@ -109,7 +142,10 @@ function libertyBay(){
 }
 function portHope(){
 }
-function rathletion(){
+function rathleton(){
+}
+function roshamuul(){
+  
 }
 function svargrond(){
 }
@@ -146,13 +182,31 @@ function venore(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Venore homes Loaded Succesfully');
+        
+        console.log(data.houses.houses.length);
+        allHomes = [];
+          for (var i=0; i < data.houses.houses.length; i++){
+          console.log("Houses Loaded: " + i);
+          allHomes.push(data.houses.houses[i]);
+          var houseName = allHomes[i].name;
+          var houseRent = allHomes[i].rent;
+          var houseStatus = allHomes[i].status;
+          var badge = document.createElement('div');
+            badge.className = 'badge';
+            badge.innerHTML =
+              '<h2>' + houseName + '</h2>' +
+              '<h3>' + houseRent + '</h3>' +
+              '<p>' + houseStatus + '</p>' ;
+            dataContainer.appendChild(badge);
+          console.log(`House ${i} - ${houseName} loaded succesfully`);
+        }
       });
     }
   )
-  .catch(function(err) {
-    console.log('Fetch Error :-S', err);
-  });
+  .catch(function(err) { console.log('Fetch Error :-S', err);});
 }
+
+
 function yalahar(){
 }
 
@@ -163,5 +217,5 @@ function clearBox()
 }
 function addtextBox()
 {
-    dataContainer.innerHTML = "hello world!";
+
 }
