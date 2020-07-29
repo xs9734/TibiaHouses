@@ -1,0 +1,17 @@
+.badge {
+  height:100px;
+  width:20%;
+  display:inline-flex;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  margin: 1%;
+}
+
+.names{
+  color:green;
+}
+
+.badge:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
