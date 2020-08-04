@@ -668,3 +668,11 @@ function addtextBox()
 {
 
 }
+
+
+var croppr = new Croppr('#croppr', {
+  aspectRatio: [100,100p, 'px']
+  startSize: [50, 50]
+  
+});
+var value = croppr.getValue();
