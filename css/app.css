@@ -10,7 +10,14 @@
 }
 
 .names{
-  color:green;
+  font-size: 20px;
+
+}
+.rents{
+    font-size: 15px;
+}
+.status{
+      font-size: 15px;
 }
 
 .badge:hover {
