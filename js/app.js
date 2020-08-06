@@ -90,7 +90,7 @@ function abDendriel(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge large-2 medium-4 small-12';
+            badge.className = 'badge small-12 medium-4 large-2 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
