@@ -1,3 +1,9 @@
+#hotd-container{
+  text-align:center;
+}
+.cityButton{
+  margin:.5rem;
+}
 
 .badge {
   height:100px;
