@@ -151,19 +151,22 @@ function ankrahmun(){
 		}
         }
         else if (f == true) {
-	      console.log("ok");
-	      console.log("ok");
-	      console.log("ok");
-	      console.log("ok");
-	      console.log("ok");
-	      console.log("ok");
-	      console.log("ok");
-	      console.log("ok");
-	      console.log("ok");
-	      console.log("ok");
-	      console.log("ok");
-	      console.log("ok");
-	      console.log("ok");
+          for (var i=0; i < data.houses.houses.length; i++){
+          console.log("Houses Loaded: " + i);
+          allHomes.push(data.houses.houses[i]);
+          var houseName = allHomes[i].name;
+          var houseRent = allHomes[i].rent;
+          var houseStatus = allHomes[i].status;
+          var badge = document.createElement('div');
+            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.innerHTML =
+              '<h2 class="names">' + houseName + '</h2>' +
+              '<h3 class="rents">' + houseRent + '</h3>' +
+              '<p class="status">' + houseStatus + '</p>' ;
+            dataContainer.appendChild(badge);
+          console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
 	}
           
       });
