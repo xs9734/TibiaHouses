@@ -140,6 +140,7 @@ function ankrahmun(){
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  console.log("Checkmark Status is false. " + occupiedFilter);
           }
           
         }
@@ -159,6 +160,7 @@ function ankrahmun(){
               	  '<p class="status">' + houseStatus + '</p>' ;
           	  dataContainer.appendChild(badge);
           	  console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  console.log("Checkmark Status is true. " + occupiedFilter);
 		       }
 		       else{
              console.log("House is Occupied");
