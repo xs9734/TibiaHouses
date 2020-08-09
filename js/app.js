@@ -132,7 +132,7 @@ function ankrahmun(){
 				console.log("array status:" + auctionedHomes[i]);
           	  		var houseName = auctionedHomes[i].name;
           	  		var houseRent = auctionedHomes[i].rent;
-          	  		var houseStatus = auctinedHomes[i].status;
+          	  		var houseStatus = auctionedHomes[i].status;
           	  		var badge = document.createElement('div');
             	  		badge.className = 'badge small-12 medium-4 large-3 cell';
             	  		badge.innerHTML =
