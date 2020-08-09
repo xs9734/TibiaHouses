@@ -127,7 +127,7 @@ function abDendriel(){
           	  	dataContainer.appendChild(badge);
 		}
 		else{
-			console.log("There are " + empty + " available);
+			console.log("There are " + empty + " available");
 		}
         }
         else if (f == true) {
