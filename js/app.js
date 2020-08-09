@@ -125,48 +125,33 @@ function ankrahmun(){
         allHomes = [];
         auctionedHomes = [];
         
-        if (occupiedFilter == false){    
-          for (var i=0; i < data.houses.houses.length; i++){
-          console.log("Houses Loaded: " + i);
-          allHomes.push(data.houses.houses[i]);
-          var houseName = allHomes[i].name;
-          var houseRent = allHomes[i].rent;
-          var houseStatus = allHomes[i].status;
-          var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
-            badge.innerHTML =
-              '<h2 class="names">' + houseName + '</h2>' +
-              '<h3 class="rents">' + houseRent + '</h3>' +
-              '<p class="status">' + houseStatus + '</p>' ;
-            dataContainer.appendChild(badge);
-          console.log(`House ${i} - ${houseName} loaded succesfully`);
-	  console.log("Checkmark Status is false. " + occupiedFilter);
+        if (occupiedFilter == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+             			console.log("House is Occupied");
+		       }
+		}
           }
           
         }
         else if (occupiedFilter == true) {
-	        for (var i=0; i<data.houses.houses.length; i++){
-	        console.log("Houses Checked:" + i);
-		        if(data.houses.houses[i].status !== "rented"){
-		          auctionedHomes.push(data.houses.houses[i]);
-          	  var houseName = auctionedHomes[i].name;
-          	  var houseRent = auctionedHomes[i].rent;
-          	  var houseStatus = auctionedHomes[i].status;
-          	  var badge = document.createElement('div');
-            	  badge.className = 'badge small-12 medium-4 large-3 cell';
-            	  badge.innerHTML =
-              	  '<h2 class="names">' + houseName + '</h2>' +
-              	  '<h3 class="rents">' + houseRent + '</h3>' +
-              	  '<p class="status">' + houseStatus + '</p>' ;
-          	  dataContainer.appendChild(badge);
-          	  console.log(`House ${i} - ${houseName} loaded succesfully`);
-	  console.log("Checkmark Status is true. " + occupiedFilter);
-		       }
-		       else{
-             console.log("House is Occupied");
-		       }
+	      console.log("ok");
 	}
-}
           
       });
     }
