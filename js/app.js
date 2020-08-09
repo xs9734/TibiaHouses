@@ -110,7 +110,7 @@ function abDendriel(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -191,7 +191,7 @@ function ankrahmun(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -272,7 +272,7 @@ function carlin(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -353,7 +353,7 @@ function darashia(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -434,7 +434,7 @@ function edron(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -515,7 +515,7 @@ function farmine(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -596,7 +596,7 @@ function grayBeach(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -677,7 +677,7 @@ function issavi(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -758,7 +758,7 @@ function kazordoon(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -839,7 +839,7 @@ function libertyBay(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -920,7 +920,7 @@ function portHope(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -1001,7 +1001,7 @@ function rathleton(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -1082,7 +1082,7 @@ function svargrond(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -1163,7 +1163,7 @@ function thais(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -1244,7 +1244,7 @@ function venore(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
@@ -1325,7 +1325,7 @@ function yalahar(){
 			        occupied++;
 		        }
           }
-		      if (empty = 0){
+		      if (empty == 0){
             var badge = document.createElement('div');
             badge.className = 'badge small-12 medium-12 large-12 cell';
             badge.innerHTML =
