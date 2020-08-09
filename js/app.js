@@ -143,7 +143,7 @@ function ankrahmun(){
           }
           
         }
-        else {
+        else if (occupiedFilter == true) {
 	        for (var i=0; i<data.houses.houses.length; i++){
 	        console.log("Houses Checked:" + i);
 		        if(data.houses.houses[i].status !== "rented"){
