@@ -69,7 +69,8 @@ function loadYa(){
     yalahar();
 }
 
-function abDendriel(){
+
+function abDendriel(){  
   fetch('https://api.tibiadata.com/v2/houses/Nefera.json')
   .then(
     function(response) {
@@ -82,9 +83,37 @@ function abDendriel(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('AbDendriel homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -99,7 +128,10 @@ function abDendriel(){
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
@@ -175,7 +207,7 @@ function ankrahmun(){
   .catch(function(err) { console.log('Fetch Error :-S', err);});
 }
 
-function carlin(){
+function carlin(){  
   fetch('https://api.tibiadata.com/v2/houses/Nefera/Carlin.json')
   .then(
     function(response) {
@@ -188,9 +220,37 @@ function carlin(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Carlin homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -198,21 +258,24 @@ function carlin(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
   .catch(function(err) { console.log('Fetch Error :-S', err);});
 }
 
-function darashia(){
+function darashia(){  
   fetch('https://api.tibiadata.com/v2/houses/Nefera/Darashia.json')
   .then(
     function(response) {
@@ -225,9 +288,37 @@ function darashia(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Darashia homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -235,21 +326,23 @@ function darashia(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
   .catch(function(err) { console.log('Fetch Error :-S', err);});
 }
-
-function edron(){
+function edron(){  
   fetch('https://api.tibiadata.com/v2/houses/Nefera/Edron.json')
   .then(
     function(response) {
@@ -262,9 +355,37 @@ function edron(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Edron homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -272,21 +393,24 @@ function edron(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
   .catch(function(err) { console.log('Fetch Error :-S', err);});
 }
 
-function farmine(){
+function farmine(){  
   fetch('https://api.tibiadata.com/v2/houses/Nefera/Farmine.json')
   .then(
     function(response) {
@@ -299,9 +423,37 @@ function farmine(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Farmine homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -309,22 +461,25 @@ function farmine(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
   .catch(function(err) { console.log('Fetch Error :-S', err);});
 }
 
-function grayBeach(){
-  fetch('https://api.tibiadata.com/v2/houses/Nefera/Gray Beach.json')
+function grayBeach(){  
+  fetch('https://api.tibiadata.com/v2/houses/Nefera/Gray%20Beach.json')
   .then(
     function(response) {
       if (response.status !== 200) {
@@ -336,9 +491,37 @@ function grayBeach(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Gray Beach homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -346,21 +529,24 @@ function grayBeach(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
   .catch(function(err) { console.log('Fetch Error :-S', err);});
 }
 
-function issavi(){
+function issavi(){  
   fetch('https://api.tibiadata.com/v2/houses/Nefera/Issavi.json')
   .then(
     function(response) {
@@ -373,9 +559,37 @@ function issavi(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Issavi homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -383,14 +597,17 @@ function issavi(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
@@ -410,9 +627,37 @@ function kazordoon(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Kazordoon homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -420,14 +665,17 @@ function kazordoon(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
@@ -447,9 +695,37 @@ function libertyBay(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Liberty Bay homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -457,14 +733,17 @@ function libertyBay(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
@@ -484,9 +763,37 @@ function portHope(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Port Hope homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -494,14 +801,17 @@ function portHope(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
@@ -521,9 +831,37 @@ function rathleton(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Rathleton homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -531,14 +869,17 @@ function rathleton(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
@@ -558,9 +899,37 @@ function svargrond(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Svargrond homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -568,14 +937,17 @@ function svargrond(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
@@ -595,9 +967,37 @@ function thais(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Thais homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -605,14 +1005,17 @@ function thais(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
@@ -632,9 +1035,37 @@ function venore(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Venore homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
+        auctionedHomes = [];
+        
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+	        	console.log("Houses Checked:" + i);
+		        if(data.houses.houses[i].status !== "rented"){
+		          	auctionedHomes.push(data.houses.houses[i]);
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
+          	  		var houseStatus = auctionedHomes[i].status;
+          	  		var badge = document.createElement('div');
+            	  		badge.className = 'badge small-12 medium-4 large-3 cell';
+            	  		badge.innerHTML =
+              	  		'<h2 class="names">' + houseName + '</h2>' +
+              	  		'<h3 class="rents">' + houseRent + '</h3>' +
+              	  		'<p class="status">' + houseStatus + '</p>' ;
+          	  		dataContainer.appendChild(badge);
+          	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
+	  			console.log("Checkmark Status is true. " + occupiedFilter);
+		       }
+		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
+             			console.log("House is Occupied");
+		       }
+		}
+        }
+        else if (f == true) {
           for (var i=0; i < data.houses.houses.length; i++){
           console.log("Houses Loaded: " + i);
           allHomes.push(data.houses.houses[i]);
@@ -642,14 +1073,17 @@ function venore(){
           var houseRent = allHomes[i].rent;
           var houseStatus = allHomes[i].status;
           var badge = document.createElement('div');
-            badge.className = 'badge';
+            badge.className = 'badge small-12 medium-4 large-3 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
               '<p class="status">' + houseStatus + '</p>' ;
             dataContainer.appendChild(badge);
           console.log(`House ${i} - ${houseName} loaded succesfully`);
-        }
+	  console.log("Checkmark Status is false. " + occupiedFilter);
+          }
+	}
+          
       });
     }
   )
