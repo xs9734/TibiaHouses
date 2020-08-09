@@ -8,8 +8,6 @@ function loadAb(){
   abDendriel();
 }
 function loadAn(){
-	  var f = document.getElementById("exampleCheckboxSwitch").checked;
-	console.log(f);
     clearBox();
     ankrahmun();
 }
@@ -122,7 +120,8 @@ function ankrahmun(){
       // Examine the text in the response
       response.json().then(function(data) {
         console.log('Ankrahmun homes Loaded Succesfully');
-        
+       	var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log("Status is currently" + f);
         console.log(data.houses.houses.length);
         allHomes = [];
         auctionedHomes = [];
