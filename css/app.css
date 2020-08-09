@@ -12,6 +12,8 @@ header{
 .mainBody{
   margin-top: 25px;
   background-color:white;
+  padding-left:40px;
+  padding-right:40p;
 }
 .cityButton{
   margin:.5rem;
