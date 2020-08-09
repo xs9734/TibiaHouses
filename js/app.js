@@ -8,6 +8,8 @@ function loadAb(){
   abDendriel();
 }
 function loadAn(){
+	  var f = document.getElementById("exampleCheckboxSwitch").checked;
+	console.log(f);
     clearBox();
     ankrahmun();
 }
