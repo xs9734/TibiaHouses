@@ -144,6 +144,7 @@ function ankrahmun(){
 	  			console.log("Checkmark Status is true. " + occupiedFilter);
 		       }
 		       else{
+			       		          	auctionedHomes.push(data.houses.houses[i]);
              			console.log("House is Occupied");
 		       }
 		}
