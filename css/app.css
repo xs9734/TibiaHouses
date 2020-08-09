@@ -7,7 +7,7 @@
 
 .badge {
   height:100px;
-  display:inline-flex;
+  display:inline-block;
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 12px;
@@ -18,14 +18,21 @@
 
 }
 .rents{
-    font-size: 15px;
+  font-size: 15px;
+  position: relative;
+  top:auto;
+  eft:auto;
+  
 }
 .status{
-      font-size: 15px;
+  font-size: 15px;
+  position: relative;
+  top:auto;
+  left:auto;
 }
 
 .badge:hover {
-    border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 
