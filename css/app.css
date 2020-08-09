@@ -15,7 +15,9 @@
 
 .names{
   font-size: 20px;
-
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .rents{
   font-size: 15px;
