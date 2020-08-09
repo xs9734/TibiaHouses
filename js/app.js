@@ -146,7 +146,7 @@ function ankrahmun(){
              			console.log("House is Occupied");
 		       }
 		}
-          }
+          
           
         }
         else if (occupiedFilter == true) {
