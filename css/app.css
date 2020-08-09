@@ -45,8 +45,9 @@
 
 /* Footer Section */
 .social-footer {
+  margin-top: 20px;
   padding: 1rem;
-  background: #8a8a8a;
+  background: #1779ba;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
