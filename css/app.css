@@ -26,6 +26,7 @@ header{
 }
 
 .badge {
+  backgroud-color:white;
   height:100px;
   display:inline-block;
   border-radius: 2px;
