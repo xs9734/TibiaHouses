@@ -127,7 +127,7 @@ function ankrahmun(){
         allHomes = [];
         auctionedHomes = [];
         
-        if (occupiedFilter == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
 	        	console.log("Houses Checked:" + i);
 		        if(data.houses.houses[i].status !== "rented"){
 		          	auctionedHomes.push(data.houses.houses[i]);
@@ -151,7 +151,19 @@ function ankrahmun(){
 		       }
 		}
         }
-        else if (occupiedFilter == true) {
+        else if (f == true) {
+	      console.log("ok");
+	      console.log("ok");
+	      console.log("ok");
+	      console.log("ok");
+	      console.log("ok");
+	      console.log("ok");
+	      console.log("ok");
+	      console.log("ok");
+	      console.log("ok");
+	      console.log("ok");
+	      console.log("ok");
+	      console.log("ok");
 	      console.log("ok");
 	}
           
