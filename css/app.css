@@ -31,6 +31,15 @@ header{
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 12px;
+    transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+}
+
+.badge:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
 }
 
 .names{
@@ -53,9 +62,7 @@ header{
   left:auto;
 }
 
-.badge:hover {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
+
 
 
 /* Footer Section */
