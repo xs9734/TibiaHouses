@@ -6,9 +6,11 @@ body{
 #hotd-container{
   text-align:center;
 }
-
+header{
+  margin-tip:25px;
+}
 .mainBody{
-  margin-top: 150px;
+  margin-top: 25px;
   background-color:white;
 }
 .cityButton{
