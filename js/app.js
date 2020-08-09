@@ -129,8 +129,9 @@ function ankrahmun(){
 	        	console.log("Houses Checked:" + i);
 		        if(data.houses.houses[i].status !== "rented"){
 		          	auctionedHomes.push(data.houses.houses[i]);
-          	  		var houseName = allHomes[i].name;
-          	  		var houseRent = allHomes[i].rent;
+				console.log("array status:" + auctionedHomes[i]);
+          	  		var houseName = auctionedHomes[i].name;
+          	  		var houseRent = auctionedHomes[i].rent;
           	  		var houseStatus = allHomes[i].status;
           	  		var badge = document.createElement('div');
             	  		badge.className = 'badge small-12 medium-4 large-3 cell';
