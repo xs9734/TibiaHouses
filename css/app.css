@@ -1,6 +1,10 @@
 #hotd-container{
   text-align:center;
 }
+
+.grid-container{
+  background-color:white;
+}
 .cityButton{
   margin:.5rem;
 }
