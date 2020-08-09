@@ -89,8 +89,13 @@ function abDendriel(){
         allHomes = [];
         auctionedHomes = [];
         
-        if (f == false){    	        for (var i=0; i<data.houses.houses.length; i++){
+        if (f == false){
+		var occupied = 0;
+		var empty = 0;
+		for (var i=0; i<data.houses.houses.length; i++){
 	        	console.log("Houses Checked:" + i);
+			console.log("Rented Homes Counter: " + occupied);
+			console.log("Auctioned Homes Counter: " + empty);
 		        if(data.houses.houses[i].status !== "rented"){
 		          	auctionedHomes.push(data.houses.houses[i]);
 				console.log("array status:" + auctionedHomes[i]);
@@ -106,11 +111,23 @@ function abDendriel(){
           	  		dataContainer.appendChild(badge);
           	  		console.log(`House ${i} - ${houseName} loaded succesfully`);
 	  			console.log("Checkmark Status is true. " + occupiedFilter);
-		       }
-		       else{
-			       		          	auctionedHomes.push(data.houses.houses[i]);
+				empty++;
+		      	}
+		       	else{
+			       	auctionedHomes.push(data.houses.houses[i]);
              			console.log("House is Occupied");
-		       }
+			        occupied++;
+		       	}
+		}
+		if (empty < 40 ){
+          	  	var badge = document.createElement('div');
+            	  	badge.className = 'badge small-12 medium-12 large-12 cell';
+            	  	badge.innerHTML =
+              	  	'<h2>' + "There are no available Homes" + '</h2>' +
+          	  	dataContainer.appendChild(badge);
+		}
+		else{
+			console.log("There are " + empty + " available);
 		}
         }
         else if (f == true) {
