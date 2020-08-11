@@ -94,7 +94,7 @@ function abDendriel(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -129,7 +129,7 @@ function abDendriel(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -175,7 +175,7 @@ function ankrahmun(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -210,7 +210,7 @@ function ankrahmun(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -256,7 +256,7 @@ function carlin(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -291,7 +291,7 @@ function carlin(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -337,7 +337,7 @@ function darashia(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -372,7 +372,7 @@ function darashia(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -418,7 +418,7 @@ function edron(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -453,7 +453,7 @@ function edron(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -499,7 +499,7 @@ function farmine(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -534,7 +534,7 @@ function farmine(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -580,7 +580,7 @@ function grayBeach(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -615,7 +615,7 @@ function grayBeach(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -661,7 +661,7 @@ function issavi(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -696,7 +696,7 @@ function issavi(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -742,7 +742,7 @@ function kazordoon(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -777,7 +777,7 @@ function kazordoon(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -823,7 +823,7 @@ function libertyBay(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -858,7 +858,7 @@ function libertyBay(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -904,7 +904,7 @@ function portHope(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -939,7 +939,7 @@ function portHope(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -985,7 +985,7 @@ function rathleton(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -1020,7 +1020,7 @@ function rathleton(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -1066,7 +1066,7 @@ function svargrond(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -1101,7 +1101,7 @@ function svargrond(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -1147,7 +1147,7 @@ function thais(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -1182,7 +1182,7 @@ function thais(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -1228,7 +1228,7 @@ function venore(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -1263,7 +1263,7 @@ function venore(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
@@ -1309,7 +1309,7 @@ function yalahar(){
           	  var houseRent = auctionedHomes[i].rent;
           	  var houseStatus = auctionedHomes[i].status;
           	  var badge = document.createElement('div');
-              badge.className = 'badge small-12 medium-4 large-3 cell';
+              badge.className = 'badge large-12 cell';
               badge.innerHTML =
                 '<h2 class="names">' + houseName + '</h2>' +
                 '<h3 class="rents">' + houseRent + '</h3>' +
@@ -1344,7 +1344,7 @@ function yalahar(){
             var houseRent = allHomes[i].rent;
             var houseStatus = allHomes[i].status;
             var badge = document.createElement('div');
-            badge.className = 'badge small-12 medium-4 large-3 cell';
+            badge.className = 'badge large-12 cell';
             badge.innerHTML =
               '<h2 class="names">' + houseName + '</h2>' +
               '<h3 class="rents">' + houseRent + '</h3>' +
