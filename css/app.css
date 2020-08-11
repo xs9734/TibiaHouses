@@ -3,7 +3,7 @@ body{
   background-repeat: no-repeat;
   background-color:#051122;
   background-position:center top;
-  z-index:-1;
+
 }
 #hotd-container{
   text-align:center;
@@ -28,7 +28,7 @@ header{
 
 .badge {
   background-color:white;
-  z-index:-1;
+
   height:100px;
   display:inline-block;
   border-radius: 2px;
@@ -41,7 +41,6 @@ header{
 }
 
 .badge:hover {
-  z-index:0;
   border: 1px solid rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
 }
