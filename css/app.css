@@ -3,7 +3,7 @@ body{
   background-repeat: no-repeat;
   background-color:#051122;
   background-position:center top;
-  z-index=-1;
+  z-index:-1;
 }
 #hotd-container{
   text-align:center;
