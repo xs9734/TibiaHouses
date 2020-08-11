@@ -3,14 +3,12 @@ body{
   background-repeat: no-repeat;
   background-color:#051122;
   background-position:center top;
-  font-family: 'Marko One', serif;
 }
 #hotd-container{
   text-align:center;
 }
 header{
   margin-top:25px;
-  
 }
 .mainBody{
   margin-top: 25px;
@@ -52,21 +50,19 @@ header{
   white-space: nowrap; 
   text-overflow: ellipsis;
   overflow: hidden;
-  font-family: 'Marmelad', sans-serif;
 }
 .rents{
   font-size: 15px;
   position: relative;
   top:auto;
   eft:auto;
-  font-family: 'Marmelad', sans-serif;
+  
 }
 .status{
   font-size: 15px;
   position: relative;
   top:auto;
   left:auto;
-  font-family: 'Marmelad', sans-serif;
 }
 
 
@@ -101,5 +97,3 @@ header{
   color: #4a4a4a;
   transition: color 0.3s ease-in;
 }
-
-
