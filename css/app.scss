@@ -1,0 +1,69 @@
+.badge {
+  background-color:white;
+  height:100px;
+  display:inline-block;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 12px;
+    transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+}
+
+.badge:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.names{
+  font-size: 20px;
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.rents{
+  font-size: 15px;
+  position: relative;
+  top:auto;
+  left:auto;
+  
+}
+.status{
+  font-size: 15px;
+  position: relative;
+  top:auto;
+  left:auto;
+}
+
+
+
+
+
+
+
+.title{
+  padding-top:10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav{
+
+  .button{
+    margin:unset;
+    text-align: left;
+    background:#b5b5b5;
+    &:hover{
+      background-color:white;
+      a{
+        color:purple;
+      }
+    }
+    a{
+      color:#474747;
+      font-weight: bold;
+
+    }
+  }
+}
