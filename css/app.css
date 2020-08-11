@@ -1,99 +1,54 @@
-body{
-  background-image:url(https://static.tibia.com/images/global/header/background-artwork.jpg);
-  background-repeat: no-repeat;
-  background-color:#051122;
-  background-position:center top;
-
-}
-#hotd-container{
-  text-align:center;
-}
-header{
-  margin-top:25px;
-}
-.mainBody{
-  margin-top: 25px;
-  background-color:white;
-  padding-left:40px;
-  padding-right:40px;
-}
-.cityButton{
-  margin:.5rem;
-}
-
-.switch input, label{
-  position: relative;
-   top: 20px;
-}
-
 .badge {
-  background-color:white;
-
-  height:100px;
-  display:inline-block;
+  background-color: white;
+  height: 100px;
+  display: inline-block;
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 12px;
-    transition-duration: 0.3s;
+  transition-duration: 0.3s;
   transition-property: transform;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transform: translateZ(0);
 }
-
 .badge:hover {
   border: 1px solid rgba(0, 0, 0, 0.3);
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-
-.names{
+.names {
   font-size: 20px;
-  white-space: nowrap; 
+  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.rents{
+.rents {
   font-size: 15px;
   position: relative;
-  top:auto;
-  eft:auto;
-  
+  top: auto;
+  left: auto;
 }
-.status{
+.status {
   font-size: 15px;
   position: relative;
-  top:auto;
-  left:auto;
+  top: auto;
+  left: auto;
 }
-
-
-
-
-/* Footer Section */
-.social-footer {
-  margin-top: 20px;
-  padding: 1rem;
-  background: #1779ba;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.title {
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
 }
-
-.social-footer .social-footer-icons li:last-of-type {
-  margin-right: 0;
+.nav .button {
+  margin: unset;
+  text-align: left;
+  background: #b5b5b5;
 }
-
-.social-footer .social-footer-icons .fa {
-  font-size: 1.3rem;
-  color: #fefefe;
+.nav .button:hover {
+  background-color: white;
 }
-
-.social-footer .social-footer-icons .fa:hover {
-  color: #4a4a4a;
-  transition: color 0.3s ease-in;
+.nav .button:hover a {
+  color: purple;
+}
+.nav .button a {
+  color: #474747;
+  font-weight: bold;
 }
