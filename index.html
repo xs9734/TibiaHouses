@@ -13,84 +13,86 @@
     <link rel="stylesheet" href="css/app.css">
     <!--  <link rel="stylesheet" href="main.css"> -->
   </head>
-  <body>
-    <header class="grid-container">
-      <div class="grid-x grid-padding-x">
-          <div class="large-12 cell">
-            <img src="https://via.placeholder.com/1200x150.png?text=Tibia+Houses"/>
+  <body><div class="grid-container">
+  <div class="grid-x grid-padding-x">
+    <div class="large-3 cell sidemenu" style="padding-right:0">
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x nav">
+           <div class="switch large-12 cell" style="margin-bottom:1px">
+            <input id="exampleCheckboxSwitch" type="checkbox">
+            <label for="exampleCheckboxSwitch">Show Rented</label>
+          </div>
+          <div class="large-4 cell">
+            <img 
+              src="https://lh3.googleusercontent.com/proxy/UZkY7unYGXxJPMpS8Q-WT2wfXC5KKamAdXaLdOTOS0FPEMumRmPElbQLQRE3Ozn4QymdN1EqgAmmcdEjQiMiYKcNJ1Si_3qZrly9UK_cEm5zDIyDSUl-Ogf8WW0ZYyYYLLMcHMvrHpf-u-5YdQ4DS8JyTAZ5atBJDBHzhq0_dWA"
+              />
+          </div>
+
+          <div class="large-8 cell title">
+            Tibia Homes
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadAb()">
+            <a href=#> Ab'Dendriel</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadAn()">
+            <a href=#> Ankrahmun</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadCa()">
+            <a href=#> Carlin</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadDa()">
+            <a href=#> Darashia</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadEd()">
+            <a href=#> Edron</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadFa()">
+            <a href=#> Farmine</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadGr()">
+            <a href=#> Gray Beach</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadIs()">
+            <a href=#> Issavi</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadKa()">
+            <a href=#> Kazordoon</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadLi()">
+            <a href=#> Liberty Bay</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadPo()">
+            <a href=#> Port Hope</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadRa()">
+            <a href=#> Rathleton</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadSv()">
+            <a href=#> Svargrond</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadTh()">
+            <a href=#> Thais</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadVe()">
+            <a href=#> Venore</a>
+          </div>
+          <div class="large-12 cell button" type="button" onclick="loadYa()">
+            <a href=#> Yalahar</a>
           </div>
         </div>
-    </header>
-      <div class="grid-container mainBody">
-        <div class="grid-x grid-padding-x">
+      </div>
+    </div>
+    <div class="large-9 cell">
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x" id="house-info">
           <div class="large-12 cell">
-            build 1.0.2020.08.09.0506
-          </div>
-        </div>
-
-
-        <div class="grid-x grid-padding-x">
-          <div class="large-12 cell">
-            <h1> Tibia Houses 0.9 </h1>
-          </div>
-        </div>
-        <div class="grid-x grid-padding-x">
-          <div class="large-8 medium-8 small-12 cell">
-            <h3> Display available homes:</h3>
-            
-            
-              <div class="grid-x grid-padding-x">
-                <div id="btn-ab" type="button" onclick="loadAb()" class="cityButton button large-2 medium-4 cell"><p>Ab'Dendriel</p></div>
-                <div id="btn-an" type="button" onclick="loadAn()" class="cityButton button large-2 medium-4 cell"><p>Ankrahmun</p></div> 
-                <div id="btn-ca" type="button" onclick="loadCa()" class="cityButton button large-2 medium-4 cell"><p>Carlin</p></div>
-                <div id="btn-da" type="button" onclick="loadDa()" class="cityButton button large-2 medium-4 cell"><p>Darashia</p></div>
-                <div id="btn-ed" type="button" onclick="loadEd()" class="cityButton button large-2 medium-4 cell"><p>Edron</p></div>
-                <div id="btn-fa" type="button" onclick="loadFa()" class="cityButton button large-2 medium-4 cell"><p>Farmine</p></div>
-                <div id="btn-gr" type="button" onclick="loadGr()" class="cityButton button large-2 medium-4 cell"><p>Gray Beach</p></div>
-                <div id="btn-is" type="button" onclick="loadIs()" class="cityButton button large-2 medium-4 cell"><p>Issavi</p></div>
-                <div id="btn-ka" type="button" onclick="loadKa()" class="cityButton button large-2 medium-4 cell"><p>Kazordoon</p></div>
-                <div id="btn-li" type="button" onclick="loadLi()" class="cityButton button large-2 medium-4 cell"><p>Liberty Bay</p></div>
-                <div id="btn-po" type="button" onclick="loadPo()" class="cityButton button large-2 medium-4 cell"><p>Port Hope</p></div>
-                <div id="btn-ra" type="button" onclick="loadRa()" class="cityButton button large-2 medium-4 cell"><p>Rathleton</p></div>
-                <div id="btn-sv" type="button" onclick="loadSv()" class="cityButton button large-2 medium-4 cell"><p>Svargrond</p></div>
-                <div id="btn-th" type="button" onclick="loadTh()" class="cityButton button large-2 medium-4 cell"><p>Thais</p></div>
-                <div id="btn-ve" type="button" onclick="loadVe()" class="cityButton button large-2 medium-4 cell"><p>Venore</p></div>
-                <div id="btn-ve" type="button" onclick="loadYa()" class="cityButton button large-2 medium-4 cell"><p>Yalahar</p></div>               
-                <div class="switch">
-                  <input id="exampleCheckboxSwitch" type="checkbox">
-                  <label for="exampleCheckboxSwitch">Show Rented</label>
-                </div>
-              </div>
-          </div>
-          <div class="large-4 medium-4 small-12 cell" id="hotd-container">
-            <p> House of the Day:</p>
-            <img src="https://via.placeholder.com/350x250.png?text=House+of+the+Day"/>
-          </div> 
-        </div>    
-
-        <div class="grid-x grid-padding-x" id="house-info"> 
-          <div class="small-12 cell">
             <h3>Select a city to display houses</h3>
           </div>
         </div>
-          
-        <footer class="social-footer">
-  <div class="social-footer-left">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xs9734/TibiaHouses">
-  </div> 
-<!--
-  <div class="social-footer-icons">
-    <ul class="menu simple">
-      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-      <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-      <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-      <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-    </ul>
-  </div>
--->
-</footer>
-        
       </div>
+    </div>
+  </div>
+</div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
